@@ -1,0 +1,14 @@
+/Users/luchan63/Documents/C#/Vehiculos/bin/Debug/net9.0/Vehiculos
+/Users/luchan63/Documents/C#/Vehiculos/bin/Debug/net9.0/Vehiculos.deps.json
+/Users/luchan63/Documents/C#/Vehiculos/bin/Debug/net9.0/Vehiculos.runtimeconfig.json
+/Users/luchan63/Documents/C#/Vehiculos/bin/Debug/net9.0/Vehiculos.dll
+/Users/luchan63/Documents/C#/Vehiculos/bin/Debug/net9.0/Vehiculos.pdb
+/Users/luchan63/Documents/C#/Vehiculos/obj/Debug/net9.0/Vehiculos.GeneratedMSBuildEditorConfig.editorconfig
+/Users/luchan63/Documents/C#/Vehiculos/obj/Debug/net9.0/Vehiculos.AssemblyInfoInputs.cache
+/Users/luchan63/Documents/C#/Vehiculos/obj/Debug/net9.0/Vehiculos.AssemblyInfo.cs
+/Users/luchan63/Documents/C#/Vehiculos/obj/Debug/net9.0/Vehiculos.csproj.CoreCompileInputs.cache
+/Users/luchan63/Documents/C#/Vehiculos/obj/Debug/net9.0/Vehiculos.dll
+/Users/luchan63/Documents/C#/Vehiculos/obj/Debug/net9.0/refint/Vehiculos.dll
+/Users/luchan63/Documents/C#/Vehiculos/obj/Debug/net9.0/Vehiculos.pdb
+/Users/luchan63/Documents/C#/Vehiculos/obj/Debug/net9.0/Vehiculos.genruntimeconfig.cache
+/Users/luchan63/Documents/C#/Vehiculos/obj/Debug/net9.0/ref/Vehiculos.dll
