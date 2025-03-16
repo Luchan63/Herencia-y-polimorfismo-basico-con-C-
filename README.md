@@ -12,21 +12,72 @@ La **herencia** permite crear una nueva clase basada en otra existente, reutiliz
 
 #### **Ejemplo de Herencia:**
 ```csharp
-class Animal  // Clase base (padre)
+using System;
+namespace Vehiculos
 {
-    public string Nombre { get; set; }
-
-    public void HacerSonido()
+    public class Vehiculo
     {
-        Console.WriteLine("El animal hace un sonido.");
-    }
-}
+        protected string marca = string.Empty;
+        protected string modelo = string.Empty;
+        protected string color = string.Empty;
+        protected int anio;
+        protected int velocidadMaxima;
 
-class Perro : Animal  // Clase derivada (hija)
-{
-    public void Ladrar()
-    {
-        Console.WriteLine("El perro ladra: ¡Guau guau!");
+        public Vehiculo(string marca, string modelo, string color, int anio, int velocidadMaxima)
+        {
+            this.marca = marca;
+            this.modelo = modelo;
+            this.color = color;
+            this.anio = anio;
+            this.velocidadMaxima = velocidadMaxima;
+        }
+
+        protected void setMarca(string marca)
+        {
+            this.marca = marca;
+        }
+
+        protected void setModelo(string modelo)
+        {
+            this.modelo = modelo;
+        }
+
+        protected void setColor(string color)
+        {
+            this.color = color;
+        }
+
+        protected void setAnio(int anio)
+        {
+            this.anio = anio;
+        }
+
+        protected void setVelocidadMaxima(int velocidadMaxima)
+        {
+            this.velocidadMaxima = velocidadMaxima;
+        }
+
+
+        public virtual void mostrarDatos()
+        {
+            Console.WriteLine("Marca: " + marca);
+            Console.WriteLine("Modelo: " + modelo);
+            Console.WriteLine("Color: " + color);
+            Console.WriteLine("Año: " + anio);
+            Console.WriteLine("Velocidad Maxima: " + velocidadMaxima);
+        }
+
+
+
+        public void acelerar()
+        {
+            Console.WriteLine("Acelerando...");
+        }
+
+        public void frenar()
+        {
+            Console.WriteLine("Frenando...");
+        }
     }
 }
 ```
@@ -39,29 +90,34 @@ El **polimorfismo** permite que una clase derivada modifique el comportamiento d
 
 #### **Ejemplo de Polimorfismo:**
 ```csharp
-class Animal
-{
-    public virtual void HacerSonido()
+   public class Camion : Vehiculo
     {
-        Console.WriteLine("El animal hace un sonido.");
+        public override void mostrarDatos()
+        {
+            base.mostrarDatos();
+            Console.WriteLine("Capacidad de carga: " + capacidadCarga);
+        }
     }
-}
+ public class Coche : Vehiculo
+    {
 
-class Perro : Animal
-{
-    public override void HacerSonido()
-    {
-        Console.WriteLine("El perro ladra: ¡Guau guau!");
+        public override void mostrarDatos()
+        {
+            
+            base.mostrarDatos();
+            Console.WriteLine("Numero de puertas: " + numeroPuertas);
+        }
     }
-}
 
-class Gato : Animal
-{
-    public override void HacerSonido()
+public class Moto : Vehiculo
     {
-        Console.WriteLine("El gato maúlla: ¡Miau!");
+      
+        public override void mostrarDatos()
+        {
+            base.mostrarDatos();
+            Console.WriteLine("Cilindrada: " + cilindrada);
+        }
     }
-}
 ```
 
 ---
